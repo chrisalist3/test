@@ -7,7 +7,7 @@ fetch('./page/sample.txt')
   })
   .then(textData => {
     secs = textData.split('\n');
-    console.log(typeOf secs[1]);
+    console.log(typeof secs[1]);
     document.querySelector('main').innerHTML = secs[0];
     document.getElementById('foot').innerHTML = secs[1];
   })
